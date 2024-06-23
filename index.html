@@ -8,8 +8,15 @@
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <main>
+        <main id="main">
             <h1>Plain Html Css Javascript Refresher</h1>
+            <div id="picture-container"></div>
+            <div id="form-container">
+                <input type="text" id="picture-url" placeholder="example.com/example.png">
+                <button onclick="changePicture(document.getElementById('picture-url').value)">
+                    Update
+                </button>
+            </div>
         </main>
         <script src="./index.js"></script>
     </body>

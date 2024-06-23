@@ -1,0 +1,34 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    & > h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    & > #picture-container {
+        width: 750px;
+        height : 750px;
+        border: 1px solid black;
+        margin-bottom: 25px;
+        background-image: url("kh4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    & > #form-container {
+        & > input {
+            padding: 5px;
+        }
+        & > button {
+            padding: 5px;
+            width: 80px;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(226, 226, 226);
+            }
+        }
+    }
+}
